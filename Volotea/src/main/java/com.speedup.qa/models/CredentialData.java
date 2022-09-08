@@ -1,26 +1,26 @@
 package com.speedup.qa.models;
 
 public class CredentialData {
-    private Integer adultos;
-    private Integer ninos;
-    private Integer bebes;
+    private Integer  adults;
+    private Integer child;
+    private Integer baby;
 
 
-    public CredentialData(Integer adultos, Integer niños, Integer bebes) {
-        this.adultos = adultos;
-        this.ninos = ninos;
-        this.bebes = bebes;
+    public Integer getAdults() {
+        return adults;
+    }
+    public Integer getChild() {
+        return child;
+    }
+    public Integer getBaby() {
+        return baby;
     }
 
-    public Integer getAdultos() {
-        return adultos;
-    }
-    public Integer getNinos() {
-        return ninos;
+    public CredentialData(Integer adults, Integer child, Integer baby) {
+        this.adults = adults;
+        this.child = child;
+        this.baby = baby;
     }
 
-    public Integer getBebes() {
-        return bebes;
-    }
 
 }

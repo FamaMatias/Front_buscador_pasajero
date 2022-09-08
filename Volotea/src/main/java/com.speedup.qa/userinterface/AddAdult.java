@@ -10,6 +10,6 @@ public class AddAdult {
             .located(By.xpath("//input[@id='input-text_sf-passenger']"));
     public static final Target PLUS_ADULT = Target
             .the("Aumenta Adultos")
-            .located(By.xpath("#svg-plus"));
+            .located(By.xpath("(//div[@class='v7-ng v7-ng--search-flow-wrapper']//search-flow-wrapper//*[name()='svg'])[2]"));
 
 }
