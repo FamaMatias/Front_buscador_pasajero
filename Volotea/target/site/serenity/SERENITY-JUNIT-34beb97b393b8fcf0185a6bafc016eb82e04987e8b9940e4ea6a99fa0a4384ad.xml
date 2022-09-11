@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="3" failures="0" name="Passanger" skipped="0" tests="3" time="0.88" timestamp="2022-09-11 11:21:48"><testcase name="Group reservation sign below the Adults selector"><error message="Couldn't convert &quot;'9'&quot; to an instance of: [class java.lang.Integer, int]&#10;---- Debugging information ----&#10;-------------------------------&#10;-------------------------------" type="cucumber.deps.com.thoughtworks.xstream.converters.ConversionException">Couldn't convert "'9'" to an instance of: [class java.lang.Integer, int]
+---- Debugging information ----
+-------------------------------
+-------------------------------</error><system-err>Couldn't convert "'9'" to an instance of: [class java.lang.Integer, int]
+---- Debugging information ----
+-------------------------------
+-------------------------------&#13;
+cucumber.deps.com.thoughtworks.xstream.converters.SingleValueConverterWrapper.fromString(SingleValueConverterWrapper.java:41)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+✽.user click on selector plus in '9'(feature/sign.feature:9)&#13;
+</system-err></testcase></testsuite>

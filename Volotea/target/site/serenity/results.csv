@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Passanger","Increase in number of Adults","ERROR","2022-09-09T14:25:50.4828896-03:00[America/Buenos_Aires]","0.0","21.1"
+"Passanger","Group reservation sign below the Adults selector","PENDING","2022-09-09T14:26:11.7090609-03:00[America/Buenos_Aires]","0.0","0.04"
+"Passanger","Select label Country","PENDING","2022-09-09T14:26:16.831817-03:00[America/Buenos_Aires]","0.0","0.01"

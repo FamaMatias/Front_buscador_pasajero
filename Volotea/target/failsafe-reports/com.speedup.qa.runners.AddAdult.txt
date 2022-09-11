@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.speedup.qa.runners.AddAdult
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 1, Skipped: 10, Time elapsed: 27.885 s <<< FAILURE! - in com.speedup.qa.runners.AddAdult
+Increase in number of Adults(Passanger)  Time elapsed: 20.891 s  <<< ERROR!
+net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
+Caused by: net.thucydides.core.webdriver.UnsupportedDriverException: 
+Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (Timed out waiting for driver server to start.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-ICEDA0M', ip: '192.168.1.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
+Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-ICEDA0M', ip: '192.168.1.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
+Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:43887/status] to be available after 20003 ms
+Caused by: java.util.concurrent.TimeoutException
+

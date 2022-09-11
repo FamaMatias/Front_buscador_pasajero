@@ -1,7 +1,9 @@
 package com.speedup.qa.stepDefinitions;
 
+import com.speedup.qa.models.AdultReservation;
 import com.speedup.qa.tasks.AcceptCookies;
 import com.speedup.qa.tasks.AddAdult;
+import com.speedup.qa.tasks.AdultsReservation;
 import com.speedup.qa.tasks.OpenBrowser;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -12,6 +14,8 @@ import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+
+import java.util.List;
 
 import static net.serenitybdd.screenplay.actors.OnStage.setTheStage;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
@@ -40,8 +44,10 @@ public class AddAdultStepDefinitions {
 
     @Then("^he can see one more adult$")
     public void he_can_see_one_more_adult() {
-
+        OnStage.theActorInTheSpotlight().attemptsTo();
     }
+
+
 
 
 }

@@ -96,7 +96,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 08-09-2022 12:07</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 11-09-2022 11:21</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -119,6 +119,9 @@
                                 </div>
                             </div>
 
+                            <div class="requirementNarrative">Background: Increase in number of Adults
+                                    <p></p>
+                            </div>
                         </td>
                         <td valign="top">
                         </td>
@@ -129,9 +132,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='far fa-stop-circle pending-icon fa-2x' title='PENDING'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
                             <span class="test-case-title">
-                                <span class="pending-color">
+                                <span class="error-color">
                                     Group reservation sign below the Adults selector
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -192,7 +195,7 @@
     <div class="story-title">
         <h3 class="story-header">Scenario Outline</h3>
 
-        <div class="scenario">Given user want select &lt;Adults&gt;<br>When user click on selector plus<br>Then he can see an alert whit a link &lt;Sign&gt; below the Adults selector</div>
+        <div class="scenario">When user click on selector plus in '&lt;Adults&gt;'<br>Then below the Adults selector he can see an alert whit a link '&lt;Sign&gt;'</div>
 
     </div>
 
@@ -216,29 +219,29 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="test-PENDING"><a href="#0">1</a></td>
-                            <td class="test-PENDING"><a
+                        <td class="test-ERROR"><a href="#0">1</a></td>
+                            <td class="test-ERROR"><a
                                     href="#0">9</a>
                             </td>
-                            <td class="test-PENDING"><a
-                                    href="#0">null</a>
+                            <td class="test-ERROR"><a
+                                    href="#0">''</a>
                             </td>
                     </tr>
                     <tr>
-                        <td class="test-PENDING"><a href="#1">2</a></td>
-                            <td class="test-PENDING"><a
+                        <td class="test-ERROR"><a href="#1">2</a></td>
+                            <td class="test-ERROR"><a
                                     href="#1">10</a>
                             </td>
-                            <td class="test-PENDING"><a
+                            <td class="test-ERROR"><a
                                     href="#1">"Group reservation"</a>
                             </td>
                     </tr>
                     <tr>
-                        <td class="test-PENDING"><a href="#2">3</a></td>
-                            <td class="test-PENDING"><a
+                        <td class="test-ERROR"><a href="#2">3</a></td>
+                            <td class="test-ERROR"><a
                                     href="#2">25</a>
                             </td>
-                            <td class="test-PENDING"><a
+                            <td class="test-ERROR"><a
                                     href="#2">"Group reservation"</a>
                             </td>
                     </tr>
@@ -262,12 +265,12 @@
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-PENDING">
+                <tr class="test-ERROR">
                     <td width="60" class="step-icon">
                         <a name="0"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection0 pending-icon"
+                                <i class="fa fa-plus-square-o imgstepSection0 error-icon"
                                    style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -276,80 +279,101 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                             <span class="top-level-step">
-                                Example #1: {Adults=9, Sign=null}
+                                Example #1: {Adults=9, Sign=''}
                             </span>
                             </a>
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">PENDING</span></td>
-                    <td width="100"><span class="top-level-step">0.01s</span></td>
+                    <td width="100"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">0.42s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
                     <table id="stepSection0" style="display:none; width:100%">
 
-                <tr class="test-PENDING">
+                <tr class="test-ERROR">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                Given user want select 9
+                                When user click on selector plus in '9'
                             </span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">PENDING</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">ERROR</span></td>
+                    <td width="100"><span class="nested-group-step">0.28s</span></td>
                 </tr>
-                <tr class="test-IGNORED">
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Conversion exception: Couldn&#39;t convert &quot;&#39;9&#39;&quot; to an instance of: [class java.lang.Integer, int]</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-2""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-2">
+            <div class="card">
+                <div class="card-header">
+                    <h4>cucumber.deps.com.thoughtworks.xstream.converters.ConversionException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>cucumber.deps.com.thoughtworks.xstream.converters.SingleValueConverterWrapper.fromString(SingleValueConverterWrapper.java:41)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />✽.user click on selector plus in '9'(feature/sign.feature:9)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    </td>
+                    </tr>
+                <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                When user click on selector plus
+                                Then below the Adults selector he can see an alert whit a link ''''
                             </span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">IGNORED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-PENDING">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Then he can see an alert whit a link null below the Adults selector
-                            </span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">PENDING</span></td>
+                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
                     <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
 
                     </table>
                     </td>
                     <tr>
-                <tr class="test-PENDING">
+                <tr class="test-ERROR">
                     <td width="60" class="step-icon">
                         <a name="1"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection1 pending-icon"
+                                <i class="fa fa-plus-square-o imgstepSection1 error-icon"
                                    style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -364,74 +388,95 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">PENDING</span></td>
-                    <td width="100"><span class="top-level-step">0.01s</span></td>
+                    <td width="100"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">0.02s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
                     <table id="stepSection1" style="display:none; width:100%">
 
-                <tr class="test-PENDING">
+                <tr class="test-ERROR">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                Given user want select 10
+                                When user click on selector plus in '10'
                             </span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">PENDING</span></td>
+                    <td width="100"><span class="nested-group-step">ERROR</span></td>
                     <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-IGNORED">
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Conversion exception: Couldn&#39;t convert &quot;&#39;10&#39;&quot; to an instance of: [class java.lang.Integer, int]</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-5""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-5">
+            <div class="card">
+                <div class="card-header">
+                    <h4>cucumber.deps.com.thoughtworks.xstream.converters.ConversionException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>cucumber.deps.com.thoughtworks.xstream.converters.SingleValueConverterWrapper.fromString(SingleValueConverterWrapper.java:41)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />✽.user click on selector plus in '10'(feature/sign.feature:9)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    </td>
+                    </tr>
+                <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                When user click on selector plus
+                                Then below the Adults selector he can see an alert whit a link '"Group reservation"'
                             </span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">IGNORED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-PENDING">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Then he can see an alert whit a link "Group reservation" below the Adults selector
-                            </span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">PENDING</span></td>
+                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
                     <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
 
                     </table>
                     </td>
                     <tr>
-                <tr class="test-PENDING">
+                <tr class="test-ERROR">
                     <td width="60" class="step-icon">
                         <a name="2"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection2 pending-icon"
+                                <i class="fa fa-plus-square-o imgstepSection2 error-icon"
                                    style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -446,72 +491,93 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">PENDING</span></td>
-                    <td width="100"><span class="top-level-step">0.01s</span></td>
+                    <td width="100"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">0.03s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
                     <table id="stepSection2" style="display:none; width:100%">
 
-                <tr class="test-PENDING">
+                <tr class="test-ERROR">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                Given user want select 25
+                                When user click on selector plus in '25'
                             </span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">PENDING</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">ERROR</span></td>
+                    <td width="100"><span class="nested-group-step">0.01s</span></td>
                 </tr>
-                <tr class="test-IGNORED">
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Conversion exception: Couldn&#39;t convert &quot;&#39;25&#39;&quot; to an instance of: [class java.lang.Integer, int]</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-8""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-8">
+            <div class="card">
+                <div class="card-header">
+                    <h4>cucumber.deps.com.thoughtworks.xstream.converters.ConversionException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>cucumber.deps.com.thoughtworks.xstream.converters.SingleValueConverterWrapper.fromString(SingleValueConverterWrapper.java:41)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />✽.user click on selector plus in '25'(feature/sign.feature:9)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    </td>
+                    </tr>
+                <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                When user click on selector plus
+                                Then below the Adults selector he can see an alert whit a link '"Group reservation"'
                             </span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">IGNORED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-PENDING">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Then he can see an alert whit a link "Group reservation" below the Adults selector
-                            </span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">PENDING</span></td>
+                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
                     <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
 
                     </table>
                     </td>
                     <tr>
-                <tr class="test-PENDING">
+                <tr class="test-ERROR">
                     <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>PENDING</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.06s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>0.88s</em></span></td>
                 </tr>
 
             </table>

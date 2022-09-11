@@ -1,0 +1,6 @@
+com\speedup\qa\tasks\AcceptCookies.class
+com\speedup\qa\userinterface\AddAdult.class
+com\speedup\qa\tasks\AddAdult.class
+com\speedup\qa\tasks\OpenBrowser.class
+com\speedup\qa\userinterface\AcceptCookies.class
+com\speedup\qa\models\CredentialData.class
