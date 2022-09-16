@@ -1,7 +1,7 @@
-## <u> Automation Linkedin with Serenity report</u>
+## <u> Volotea Automation with Serenity report</u>
 
 
-:pushpin: Automation was created in linkedin where a new job is added
+:pushpin: Volotea is a low-cost travel page which we automate different scenarios
 
 
 ### Table of Contents
@@ -18,8 +18,10 @@
 
 #### _In this repository we will be automated 2 scenarios:_
  <ul>
-<li>Login
-<li>New Charge
+<li>AddAdult
+<li>Happy Path (Selection cities and date to travel)
+<li>SelectCountry (Search cities for Country)
+<li>Sign (check sign after select more than 9 adults)
 </ul>
 
 #### _In this work i used:_
@@ -32,33 +34,39 @@ src
  |--main
  |    |--java
  |        |--com.speedup.qa
- |                  |-- interaction
- |                  |        . ScrollDown
- |                  |        . WaitInteraction
  |                  |-- models
- |                  |        . CredentialData
- |                  |        . DataJob
+ |                  |        . AdultReservation
  |                  |-- questions
- |                  |        . Login
+ |                  |        . SelectCountry
  |                  |-- tasks
- |                  |        . AddNewJob
- |                  |        . LoginUser
+ |                  |        . AcceptCookies
+ |                  |        . AddAdult
  |                  |        . OpenBrowser
+ |                  |        . HappyPath
  |                  |-- userinterface
- |                           . AddJob 
- |                           . Login 
+ |                           . AcceptCookies
+ |                           . AddAdult
+ |                           . OpenBrowser
+ |                           . HappyPath
+ |                           . AcceptCookies
  |--test
  |    |--java
  |    |    |--com.speedup.qa
- |    |             |-- runners
- |    |             |        . loginRunners
- |    |             |        . newChargeRunners
- |    |             |--stepdefinitios
- |    |                      . loginStepDefinitions
- |    |                      . newChargeStepDefinitions
+ |    |              |-- runners
+ |    |              |        . AddAdult
+ |    |              |        . HappyPath
+ |    |              |        . SelectCountry
+ |    |              |        . Sign
+ |    |              |--stepdefinitios
+ |    |                       . AddAdultStepDefinitions
+ |    |                       . HappyPathStepDefinitions
+ |    |                       . SelectCountryStepDefinitions
+ |    |                       . SignStepDefinitions
  |    |--feature
- |           . login.feature
- |           . newCharge.feature
+ |           . AddAdult.feature
+ |           . HappyPath.feature
+ |           . SelectCountry.feature
+ |           . Sign.feature
  |--target
       |--site
           . index.html  
@@ -69,7 +77,6 @@ src
 
 * [Intellij IDEA](https://www.jetbrains.com/es-es/idea/)
 * [POM]()
-
 
 ```bash
 <?xml version="1.0" encoding="UTF-8"?>
@@ -236,10 +243,12 @@ OS : Windos 10
 
 In compliance with the SOLID principles, we must carry out the execution according to the functionality that we want to see:
 
-| Runner (Java Class) | Feature           |
-|---------------------|-------------------|
-| loginRunners        | login.feature     |
-| newCharge           | newCharge.feature |
+| Runner (Java Class) | Feature               |
+|---------------------|-----------------------|
+| AddAdult            | AddAdult.feature      |
+| HappyPath           | HappyPath.feature     |
+| SelectCountry       | SelectCountry.feature |
+| Sign                | Sign.feature          |
 ***
 <a name="reports"></a>
 4. How to see reports? :computer:
