@@ -16,7 +16,7 @@
 
 ***
 
-#### _In this repository we will be automated 2 scenarios:_
+#### _In this repository we will be automated 4 scenarios:_
  <ul>
 <li>AddAdult
 <li>Happy Path (Selection cities and date to travel)
