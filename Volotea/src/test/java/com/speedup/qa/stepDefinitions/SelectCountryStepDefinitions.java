@@ -33,12 +33,12 @@ public class SelectCountryStepDefinitions {
 
         @When("^user click on selector origin$")
         public void user_click_on_selector_origin () {
-            OnStage.theActorInTheSpotlight().wasAbleTo(SelectDestination.selectDestination());
+          //  OnStage.theActorInTheSpotlight().wasAbleTo(SelectDestination.selectDestination());
         }
 
         @When("^user click on selector country$")
         public void user_click_on_selector_country () {
-            OnStage.theActorInTheSpotlight().wasAbleTo(SelectCountry.selectCountry());
+          //  OnStage.theActorInTheSpotlight().wasAbleTo(SelectCountry.selectCountry());
         }
 
         @Then("^he can see boxes with all country inside$")

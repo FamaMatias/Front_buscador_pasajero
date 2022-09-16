@@ -1,10 +1,6 @@
 package com.speedup.qa.stepDefinitions;
 
-import com.speedup.qa.models.AdultReservation;
-import com.speedup.qa.tasks.AcceptCookies;
-import com.speedup.qa.tasks.AddAdult;
-import com.speedup.qa.tasks.AdultsReservation;
-import com.speedup.qa.tasks.OpenBrowser;
+import com.speedup.qa.tasks.*;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -15,13 +11,10 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
-import java.util.List;
-
 import static net.serenitybdd.screenplay.actors.OnStage.setTheStage;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 
-public class AddAdultStepDefinitions {
-
+public class HappyPathStepDefinitions {
     @Managed
     private WebDriver myBrowser;
 
@@ -30,23 +23,26 @@ public class AddAdultStepDefinitions {
         setTheStage(Cast.whereEveryoneCan(BrowseTheWeb.with(myBrowser)));
         theActorCalled("Matias S Fama");
     }
-    @Given("^user add passenger$")
-    public void user_add_passenger() {
+    @Given("^user in the portal$")
+    public void user_in_the_portal() {
         OnStage.theActorInTheSpotlight().wasAbleTo(OpenBrowser.browser());
         OnStage.theActorInTheSpotlight().wasAbleTo(AcceptCookies.acceptCookies());
     }
 
-    @When("^user click on selector plus$")
-    public void user_click_on_selector_plus() {
-        OnStage.theActorInTheSpotlight().attemptsTo(AddAdult.addAdult());
+    @When("^user select origin and destination$")
+    public void user_select_origin_and_destination() {
+        OnStage.theActorInTheSpotlight().wasAbleTo(HappyPath.happyPath());
+
     }
 
-    @Then("^he can see one more adult$")
-    public void he_can_see_one_more_adult() {
-        OnStage.theActorInTheSpotlight().attemptsTo();
+    @When("^select date to outbound and return$")
+    public void select_date_to_outbound_and_return() {
+
     }
 
+    @Then("^he can buy the fly$")
+    public void he_can_buy_the_fly() {
 
-
+    }
 
 }
