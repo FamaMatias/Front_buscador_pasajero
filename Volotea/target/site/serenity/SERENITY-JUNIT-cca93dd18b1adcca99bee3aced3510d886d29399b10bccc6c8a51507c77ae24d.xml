@@ -1,1 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Passanger" skipped="0" tests="1" time="17.27" timestamp="2022-09-11 11:46:14"><testcase name="Select label Country"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Passanger" skipped="0" tests="1" time="22.09" timestamp="2022-09-17 08:33:45"><testcase name="Select label Country"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.speedup.qa.tasks.ValidateCountry.performAs(ValidateCountry.java:14)&#13;
+com.speedup.qa.stepDefinitions.SelectCountryStepDefinitions.he_can_see_boxes_with_all_country_inside(SelectCountryStepDefinitions.java:46)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

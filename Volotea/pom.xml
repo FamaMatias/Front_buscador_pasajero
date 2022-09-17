@@ -7,6 +7,7 @@
     <groupId>org.example</groupId>
     <artifactId>Volotea</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <serenity.version>2.0.17</serenity.version>
